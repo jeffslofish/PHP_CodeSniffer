@@ -82,6 +82,8 @@ class PHP_CodeSniffer_Reporting
         $reportFile='',
         $reportWidth=80
     ) {
+        $report = "Json";
+        
         if ($reportFile !== null) {
             $reportDir = dirname($reportFile);
             if ($reportDir === '.') {
